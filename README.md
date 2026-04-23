@@ -9,8 +9,8 @@
 
 | | Link |
 |---|---|
-| 🌐 Live Application | https://caresync-frontend.vercel.app |
-| 🔧 Backend API | https://caresync-backend.up.railway.app/health |
+| 🌐 Live Application | [https://caresync-frontend.vercel.app](https://caresync-iota.vercel.app/) |
+| 🔧 Backend API | [https://caresync-backend.up.railway.app/health](https://caresync-backend-production-38b2.up.railway.app/) |
 
 ---
 
@@ -90,6 +90,7 @@ caresync/
 │   ├── .env.example
 │   └── package.json
 │
+
 ├── backend/                   # Node.js + Express Backend
 │   ├── controllers/          # Business logic
 │   ├── models/               # MongoDB schemas
@@ -99,11 +100,13 @@ caresync/
 │   ├── .env.example
 │   └── package.json
 │
+
 ├── docs/                      # Documentation
 │   ├── SRS.md                # Software Requirements Spec
 │   ├── DesignDocument.md     # System Design Document
 │   └── TestCases.md          # Manual Test Cases
 │
+
 ├── tests/                     # Automated Test Files
 │   ├── auth.test.js
 │   ├── appointments.test.js
@@ -112,6 +115,7 @@ caresync/
 │   ├── beds.test.js
 │   └── admin.test.js
 │
+
 └── README.md                  # This file
 
 ---
