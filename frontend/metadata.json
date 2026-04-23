@@ -1,0 +1,6 @@
+{
+  "name": "CareSync",
+  "description": "A smart healthcare management system with role-based dashboards, appointment scheduling, bed management, and emergency SOS features.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": []
+}
