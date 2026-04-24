@@ -8,9 +8,9 @@
 
 | | Link |
 |---|---|
-| 🌐 **Live Application** | https://caresync-frontend.vercel.app |
-| 🔧 **Backend API** | https://caresync-backend.up.railway.app/health |
-| 💻 **Source Code** | https://github.com/YOUR_USERNAME/caresync |
+| 🌐 **Live Application** | [https://caresync-frontend.vercel.app](https://caresync-iota.vercel.app/) |
+| 🔧 **Backend API** | [https://caresync-backend.up.railway.app/health](https://caresync-backend-production-38b2.up.railway.app/health) |
+| 💻 **Source Code** | https://github.com/swatigupta06/caresync |
 
 ### Demo Credentials
 | Role | Email | Password |
@@ -294,7 +294,7 @@ JSON response → Axios receives it → React state updated → UI re-renders
 
 ## 👤 Individual Contribution Summary
 
-### Developer: [Your Full Name]
+### Developer: [Swati Gupta]
 
 | Module | Description | Files Owned | Effort % |
 |---|---|---|---|
@@ -320,7 +320,7 @@ JSON response → Axios receives it → React state updated → UI re-renders
 | Document | Description | Link |
 |---|---|---|
 | SRS | Software Requirements Specification | [docs/SRS.md](./docs/SRS.md) |
-| Design Document | System architecture, ER diagram, data flow, sequence diagrams | [docs/DesignDocument.md](./docs/DesignDocument.md) |
+| Design Document | System architecture, ER diagram, data flow, sequence diagrams | [docs/Design_docs.md](./docs/Design_docs.md) |
 | Manual Test Cases | Test case IDs, inputs, expected outputs, pass/fail criteria | [docs/TestCases.md](./docs/TestCases.md) |
 | Automated Tests | Jest + Supertest backend API tests | [tests/](./tests/) |
 | Backend README | API reference and backend setup | [backend/README.md](./backend/README.md) |
