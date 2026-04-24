@@ -315,6 +315,65 @@ JSON response → Axios receives it → React state updated → UI re-renders
 
 ---
 
+## 🚀 Running Locally
+ 
+### Prerequisites
+- Node.js v18 or higher → https://nodejs.org
+- MongoDB Atlas account → https://cloud.mongodb.com
+### Step 1 — Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/caresync.git
+cd caresync
+```
+ 
+### Step 2 — Setup and start the Backend
+```bash
+cd backend
+npm install
+cp .env.example .env
+```
+ 
+Edit `.env` and fill in:
+```env
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/caresync
+JWT_SECRET=your_long_random_secret_key_here
+```
+ 
+Then run:
+```bash
+node utils/seeder.js
+npm run dev
+```
+ 
+Backend starts at → **http://localhost:5000**
+ 
+### Step 3 — Setup and start the Frontend
+```bash
+cd ../frontend
+npm install
+```
+ 
+Create a `.env` file inside the `frontend/` folder:
+```env
+VITE_API_URL=http://localhost:5000
+```
+ 
+Then run:
+```bash
+npm run dev
+```
+ 
+Frontend starts at → **http://localhost:3000**
+ 
+### Step 4 — Open in Browser
+```
+http://localhost:3000
+```
+ 
+Login with any demo credential listed above.
+ 
+---
+
 ## 📄 Documentation
 
 | Document | Description | Link |
@@ -325,6 +384,45 @@ JSON response → Axios receives it → React state updated → UI re-renders
 | Automated Tests | Jest + Supertest backend API tests | [tests/](./tests/) |
 | Backend README | API reference and backend setup | [backend/README.md](./backend/README.md) |
 | Frontend README | Component architecture and frontend setup | [frontend/README.md](./frontend/README.md) |
+
+---
+ 
+## 🔒 Security
+ 
+- JWT authentication with 7-day token expiry
+- bcrypt password hashing with 12 salt rounds
+- Role-Based Access Control (RBAC) on every endpoint
+- Rate limiting — 200 requests per 15 minutes globally
+- CORS restricted to allowed origins only
+- File uploads validated — PDF and images only, max 10MB
+- Aadhaar 12-digit format validation for patients
+- Helmet security headers on all responses
+
+---
+ 
+## 🤝 Special Features
+ 
+### AI Symptom Checker
+- Powered by OpenAI GPT-3.5-turbo
+- Full multi-turn conversation history support
+- Smart keyword-based mock fallback when API key not configured
+- Integrated into Patient dashboard and appointment page
+### Medical Record Permission System
+- Doctor requests access to patient records with a reason
+- Patient receives notification and approves or rejects
+- Doctor gets read-only access only if approved
+- Full audit trail of all permission requests
+### Emergency SOS
+- Captures real GPS coordinates from browser
+- Stores alert in database with location data
+- Returns nearest mock hospital with name, address, phone, distance
+- Provides step-by-step route guidance
+- Staff can acknowledge and resolve alerts
+### Lab Payment Simulation
+- Patient books a test from the catalogue
+- Payment simulated via UPI, Card, or Net Banking
+- paymentStatus updates from Pending to Paid
+- Lab report linked back to the booking once uploaded
 
 ---
 
