@@ -256,9 +256,9 @@ function ProtectedRoute({ children, allowedRoles }) {
 2. Go to https://vercel.com → New Project → Import repo
 3. Set root directory to `frontend/`
 4. Add environment variable:
-   ```
+   
    VITE_API_URL = [https://your-railway-backend.up.railway.app](https://caresync-backend-production-38b2.up.railway.app/)
-   ```
+   
 5. Click Deploy
 6. After deploy copy your Vercel URL and update `ALLOWED_ORIGINS` in Railway backend
 
