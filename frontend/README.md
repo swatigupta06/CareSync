@@ -6,9 +6,8 @@
 
 ## 🔴 Live Application
 
-```
 [https://caresync-frontend.vercel.app](https://caresync-iota.vercel.app/)
-```
+
 
 ---
 
