@@ -1,4 +1,3 @@
-<<<<<<< Head
 # 🔧 CareSync — Backend API
 
 > Production-ready REST API for the CareSync healthcare platform built with Node.js, Express.js, and MongoDB Atlas.
@@ -7,14 +6,11 @@
 
 ## 🔴 Live API
 
-```
-https://caresync-backend.up.railway.app
-```
+[https://caresync-backend.up.railway.app](https://caresync-backend-production-38b2.up.railway.app/)
 
 Health check:
-```
-https://caresync-backend.up.railway.app/health
-```
+
+[https://caresync-backend.up.railway.app/health](https://caresync-backend-production-38b2.up.railway.app/health)
 
 ---
 
@@ -342,4 +338,4 @@ Authorization: Bearer <token>
 
 - Frontend → [../frontend](../frontend/README.md)
 - Documentation → [../docs](../docs/)
-- Live App → https://caresync-frontend.vercel.app
+- Live App → [https://caresync-frontend.vercel.app](https://caresync-iota.vercel.app/)
